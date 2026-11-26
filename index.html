@@ -4,20 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sidekick AI</title>
-  <meta name="description" content="Purpose-built AI tools for professionals.">
+  <meta name="description" content="Good data, sharper decisions, a little AI at your side.">
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }
-
-    html, body {
-      height: 100%;
     }
 
     body {
@@ -28,9 +24,67 @@
       justify-content: center;
       min-height: 100vh;
       padding: 2rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .shape {
+      position: absolute;
+      top: 50%;
+      right: 6vw;
+      width: min(38vw, 30rem);
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .services {
+      margin-top: 1.75rem;
+      list-style: none;
+      font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+      color: #4A453E;
+      line-height: 1.5;
+    }
+
+    .services li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-top: 0.6rem;
+    }
+
+    .services li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: #9A9189;
+      transform: rotate(45deg);
+    }
+
+    @media (min-width: 901px) {
+      body {
+        padding-right: calc(min(38vw, 30rem) + 8vw);
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+      }
+
+      .shape {
+        position: static;
+        align-self: flex-end;
+        flex-shrink: 0;
+        width: min(45vw, 14rem);
+        margin-bottom: 2rem;
+        transform: none;
+      }
     }
 
     .content {
+      position: relative;
       max-width: 640px;
       width: 100%;
     }
@@ -78,11 +132,28 @@
   </style>
 </head>
 <body>
+  <svg class="shape" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+    <circle cx="235" cy="165" r="135" fill="#C0B8AD" opacity="0.45"/>
+    <polygon points="60,330 200,80 320,330" fill="#9A9189" opacity="0.35"/>
+    <path d="M200 250 H360 A160 120 0 0 1 200 370 Z" fill="#5C574F" opacity="0.55"/>
+    <circle cx="150" cy="170" r="105" fill="none" stroke="#4A453E" stroke-width="1"/>
+    <line x1="30" y1="370" x2="370" y2="30" stroke="#252220" stroke-width="1"/>
+    <circle cx="320" cy="80" r="9" fill="#252220"/>
+  </svg>
   <div class="content">
     <p class="wordmark">Sidekick <em>AI</em></p>
     <hr class="rule">
-    <p class="tagline">Purpose-built AI tools for professionals.</p>
-    <p class="date">June 2026</p>
+    <p class="tagline">Good data, sharper decisions, a little AI at your side.</p>
+    <ul class="services">
+      <li>Data architecture for lakehouses, warehouses and cloud platforms</li>
+      <li>Legacy and mainframe modernisation and data migration</li>
+      <li>Data engineering and integration, built to feed analytics and AI</li>
+      <li>Forecasting, predictive modelling and machine learning</li>
+      <li>Document classification and summarisation with generative AI</li>
+      <li>Data governance, quality and metadata you can trust</li>
+      <li>AI roadmaps, training and practical adoption</li>
+    </ul>
+    <p class="date">November 2026</p>
   </div>
 </body>
 </html>

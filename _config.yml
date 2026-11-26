@@ -1,0 +1,5 @@
+# Keep working notes out of the published site
+exclude:
+  - CLAUDE.md
+  - instructions.md
+  - README.md

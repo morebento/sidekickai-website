@@ -12,7 +12,7 @@ Single full-viewport page. No scrolling required on any standard screen size.
 3. **Tagline** — one line, see copy below.
 4. **Date stamp** — small, uppercase, muted. Current month and year (e.g. "June 2026").
 5. *(Contact details to be added in a future iteration.)*
-No navigation. No hero image. No background illustration. No social icons (unless Ben specifically requests later).
+No navigation. No hero image. No background illustration. No social icons (unless specifically requested later).
 ---
 ## Copy
 **Wordmark:**
@@ -47,7 +47,7 @@ No stark black or white anywhere.
 ## Behaviour
 - Fully responsive. Looks correct on mobile, tablet, desktop.
 - No animations, no transitions.
-- No cookies, no tracking, no analytics (until Ben requests).
+- No cookies, no tracking, no analytics (until requested).
 - No JavaScript required.
 ---
 ## Meta / SEO
@@ -75,4 +75,4 @@ No stark black or white anywhere.
 
 *These can be added in a future iteration.*
 ---
-*Spec prepared June 2026. Contact Ben Moretti with questions.*
+*Spec prepared June 2026.*
