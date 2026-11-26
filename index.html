@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sidekick AI</title>
-  <meta name="description" content="Good data, sharper decisions, a little AI at your side.">
+  <meta name="description" content="Sidekick AI">
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,31 +35,6 @@
       width: min(38vw, 30rem);
       transform: translateY(-50%);
       pointer-events: none;
-    }
-
-    .services {
-      margin-top: 1.75rem;
-      list-style: none;
-      font-size: clamp(0.95rem, 1.6vw, 1.05rem);
-      color: #4A453E;
-      line-height: 1.5;
-    }
-
-    .services li {
-      position: relative;
-      padding-left: 1.25rem;
-      margin-top: 0.6rem;
-    }
-
-    .services li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.6em;
-      width: 0.4rem;
-      height: 0.4rem;
-      background: #9A9189;
-      transform: rotate(45deg);
     }
 
     @media (min-width: 901px) {
@@ -110,14 +85,49 @@
       width: 3rem;
     }
 
-    .tagline {
-      margin-top: 1.5rem;
-      font-size: clamp(1rem, 2.5vw, 1.25rem);
-      font-weight: 400;
-      font-style: italic;
-      letter-spacing: 0.01em;
+    .login {
+      margin-top: 1.75rem;
+      max-width: 18rem;
       color: #4A453E;
-      line-height: 1.5;
+    }
+
+    .login label {
+      display: block;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .login input,
+    .login button {
+      display: block;
+      width: 100%;
+      margin-top: 0.35rem;
+      padding: 0.6rem 0.75rem;
+      font: inherit;
+      font-size: 1rem;
+      border: 1px solid #C0B8AD;
+      border-radius: 2px;
+    }
+
+    .login input {
+      background: transparent;
+      color: #252220;
+    }
+
+    .login button {
+      margin-top: 1.5rem;
+      background: #252220;
+      border-color: #252220;
+      color: #EDEAE3;
+      cursor: not-allowed;
+    }
+
+    .login input:disabled {
+      cursor: not-allowed;
+    }
+
+    .login button:disabled {
+      opacity: 0.6;
     }
 
     .date {
@@ -143,16 +153,14 @@
   <div class="content">
     <p class="wordmark">Sidekick <em>AI</em></p>
     <hr class="rule">
-    <p class="tagline">Good data, sharper decisions, a little AI at your side.</p>
-    <ul class="services">
-      <li>Data architecture for lakehouses, warehouses and cloud platforms</li>
-      <li>Legacy and mainframe modernisation and data migration</li>
-      <li>Data engineering and integration, built to feed analytics and AI</li>
-      <li>Forecasting, predictive modelling and machine learning</li>
-      <li>Document classification and summarisation with generative AI</li>
-      <li>Data governance, quality and metadata you can trust</li>
-      <li>AI roadmaps, training and practical adoption</li>
-    </ul>
+    <!-- Decorative only: no <form>, no field names, so nothing can be submitted -->
+    <div class="login">
+      <label for="email">Email</label>
+      <input type="email" id="email" disabled>
+      <label for="password">Password</label>
+      <input type="password" id="password" disabled>
+      <button type="button" disabled>Log in</button>
+    </div>
     <p class="date">November 2026</p>
   </div>
 </body>
